@@ -1,0 +1,284 @@
+/* 
+Theme Name: Le jeu pour tous
+*/
+@font-face {
+    font-family: 'cool crayon';
+    src: url('fonts/DK_Cool_Crayon.ttf') format('truetype');
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    margin-top: 6vh;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* MENU */
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, .07);
+    z-index: +1;
+
+
+    margin-top: 32px;
+
+
+}
+.menu-part-container {
+    width: inherit;
+}
+.menu-container ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.menu-container li {
+    position: relative;
+    cursor: pointer;
+}
+.menu-container ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+.menu-container .menu-img-container {
+    height: 140%;
+    width: 60px;
+    position: relative;
+    top: 12px;
+}
+.menu-img-container .menu-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+}
+.menu-img-container .menu-img img {
+    width: 60px;
+}
+.menu-img-container .menu-img .box-shadow-container {
+    position: absolute;
+    bottom: 0;
+    width: 140%;
+    height: 90%;
+    background-color: white;
+    z-index: -1;
+    border-radius: 0 0 1000px 1000px;
+    box-shadow: 0px 30px 20px rgba(138, 138, 138, .07);
+}
+.menu-container .active a {
+    font-weight: 600;
+}
+/* .menu-container .active::before, .menu-container .menu-item-object-page::before {
+    content: '';
+    position: absolute;
+    right: -10%;
+    top: 10%;
+    width: 120%;
+    height: 80%;
+    transform: rotate(-1.5deg);
+    background-color: rgba(251, 164, 34, .3);
+    z-index: -1;
+} */
+/* SUB-MENU */
+.menu-container .menu-item-has-children::after {
+    content: '';
+    display: inline-flex;
+    width: 5px;
+    height: 5px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(45deg);
+    vertical-align: middle;
+    margin-bottom: 3px;
+    margin-left: 3px;
+}
+.menu-container .sub-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 95%;
+    width: max-content;
+    padding-top: 19px;
+    background-color: white;
+    box-shadow: 0px 30px 60px rgba(0, 0, 0, .07);
+    overflow: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+    /* transition: transform .25s ease-out; */
+}
+.menu-container .sub-menu li {
+    padding: 3px 12px;
+    width: -webkit-fill-available;
+    transition: background-color .15s;
+}
+.menu-container .sub-menu li a {
+    font-weight: normal;
+}
+.menu-container .menu-item-has-children:hover .sub-menu {
+    transform: scaleY(1);
+}
+.menu-container .sub-menu li:hover {
+    background-color: rgba(251, 164, 34, .3);
+}
+
+/* MAIN IMG */
+.main-img {
+    width: 93%;
+    height: 55vh;
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    padding: 80px 0 0 7%;
+    font-family: 'cool crayon', 'poppins', sans-serif;
+}
+.main-img .titles {
+    display: flex;
+    flex-direction: column;
+}
+.main-img .titles h1 {
+    font-size: 45px;
+}
+.main-img .titles p {
+    font-size: 25px;
+}
+
+/* ARTICLES */
+.main-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url('img/background/bg-pattern.jpeg');
+    background-size: contain;
+    background-position-y: 0;
+    transition: background-position-y .06s;
+}
+.article-list-container {
+    width: 60%;
+    list-style: none;
+    position: relative;
+    top: -20vh;
+}
+.article {
+    display: flex;
+    width: 100%;
+    max-height: 350px;
+    margin: 30px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    position: relative;
+}
+.article .article-content {
+    width: 70%;
+    padding: 30px;
+    position: relative;
+}
+.article .article-img {
+    width: 30%;
+    border-radius: 0 10px 10px 0;
+    background-size: cover;
+    background-position: center;
+}
+.article-content h2 {
+    font-family: 'cool crayon', 'poppins', sans-serif;
+}
+.article-content .article-title-link {
+    text-decoration: none;
+    color: black;
+}
+.article-content .author-and-date {
+    font-size: 12px;
+    opacity: .5;
+}
+.article-content a {
+    color: #FBA422;
+}
+.article-content .article-text {
+    max-height: 157px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.article-content .article-btns {
+    display: flex;
+    position: absolute;
+    bottom: 28px;
+    padding-top: 4px;
+    width: 89%;
+    background-color: white;
+}
+.article-content .back-articles-btns {
+    /* background-color: black; */
+    height: 31px;
+}
+.article-content .article-btns a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.article-btns a img {
+    height: 15px;
+}
+.article-btns .share-btn {
+    margin-left: 15px;
+    background-color: rgba(63, 73, 172, 0.2);
+    color: #3F49AC;
+}
+.article-btns .read-more-btn {
+    background-color: rgba(251, 190, 34, 0.2);
+    color: #FBA422;
+}
+.article-btns .read-more-btn img {
+    margin-left: 7px;
+}
+
+
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px) {
+    .menu-img-container {
+        display: none;
+    }
+}
+@media screen and (max-width: 730px) {
+    .menu-container {
+        width: 35%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu-container .menu-part-container {
+        width: 70%;
+    }
+    .menu-container .menu-part-container ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
