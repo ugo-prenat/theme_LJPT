@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="main-img" style="background-image: url('<?= get_theme_mod('main_img') ?>')">
+<div class="main-img" style="background-image: url('<?= get_theme_mod('main_img1') ?>')">
     <div class="titles">
         <h1>Association <?= get_bloginfo('name') ?></h1>
         <p><?= get_bloginfo('description') ?></p>
@@ -22,7 +22,7 @@
                         <div class="article-btns">
                             <a href="<?php the_permalink() ?>" class="read-more-btn">
                                 <p>Afficher l'article</p>
-                                <img src="<?= get_template_directory_uri() . '/img/right-arro.png' ?>" alt="Image flèche">
+                                <img src="<?= get_template_directory_uri() . '/img/right-arrow.png' ?>" alt="Image flèche">
                             </a>
                             <a href="" class="share-btn">
                                 <img src="<?= get_template_directory_uri() . '/img/share.png' ?>" alt="Image paratger">

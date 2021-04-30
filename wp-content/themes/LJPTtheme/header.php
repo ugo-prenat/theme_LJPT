@@ -17,7 +17,7 @@
 
         <div class="menu-img-container">
             <div class="menu-img">
-                <img src="<?php echo get_template_directory_uri() . '/img/logo1.png' ?>" alt="Logo le jeu pour tous">
+                <img src="<?= get_theme_mod('main_menu_img') ?>" alt="Logo le jeu pour tous">
                 <div class="box-shadow-container"></div>
             </div>
         </div>

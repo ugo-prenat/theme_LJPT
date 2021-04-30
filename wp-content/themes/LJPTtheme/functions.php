@@ -1,6 +1,7 @@
 <?php
 
 require_once 'customize/main-img.php';
+require_once 'customize/main-menu-img.php';
 
 add_action('after_setup_theme', function () {
     add_theme_support('title-tag');

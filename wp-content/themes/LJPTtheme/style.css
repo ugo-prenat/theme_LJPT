@@ -55,7 +55,7 @@ ul {
     text-decoration: none;
     color: black;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
 }
 .menu-container .menu-img-container {
     height: 140%;
@@ -264,6 +264,9 @@ ul {
     width: 80%;
     padding: 10vh 10%;
 }
+.single-post-container a {
+    color: #FBA422;
+}
 .single-post-container .titles {
     margin-bottom: 8vh;
 }
@@ -283,6 +286,20 @@ ul {
 }
 
 
+
+/* FOOTER */
+footer {
+    background-color: #FBA422;
+    width: 60%;
+    height: 7vh;
+    padding: 0 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a {
+    color: white;
+}
 
 /* RESPONSIVE */
 @media screen and (max-width: 900px) {
