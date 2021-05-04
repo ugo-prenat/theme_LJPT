@@ -10,6 +10,9 @@ body {
     font-family: 'poppins', sans-serif;
     margin: 0;
     margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h1, h2, h3, p {
     margin: 0;
@@ -54,7 +57,6 @@ ul {
 .menu-container ul a {
     text-decoration: none;
     color: black;
-    font-weight: 500;
     font-size: 16px;
 }
 .menu-container .menu-img-container {
@@ -125,15 +127,15 @@ ul {
     overflow: hidden;
     transform: scaleY(0);
     transform-origin: top;
-    /* transition: transform .25s ease-out; */
 }
 .menu-container .sub-menu li {
-    padding: 3px 12px;
+    padding: 5px 12px;
     width: -webkit-fill-available;
     transition: background-color .15s;
 }
 .menu-container .sub-menu li a {
     font-weight: normal;
+    font-size: 15px;
 }
 .menu-container .menu-item-has-children:hover .sub-menu {
     transform: scaleY(1);
@@ -165,16 +167,17 @@ ul {
 
 /* ARTICLES */
 .main-container {
+    min-height: 85vh;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 60%;
     background-image: url('img/background/bg-pattern.jpeg');
-    background-size: contain;
+    background-size: cover;
     background-position-y: 0;
     transition: background-position-y .05s;
 }
 .article-list-container {
-    width: 60%;
+    width: 100%;
     list-style: none;
     position: relative;
     top: -20vh;
@@ -285,6 +288,50 @@ ul {
     justify-content: center;
 }
 
+/* LETTER AND PHONE BLOCK */
+.letter-and-phone-block-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.block {
+    width: 48%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+.block-title {
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    color: #94CB4F;
+}
+/* svg {
+    fill: #94CB4F
+} */
+.block-title p {
+    margin-top: 10px;
+}
+.block-content {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    font-size: 15px;
+}
+textarea {
+    resize: horizontal;
+    font-family: sans-serif;
+    outline: none;
+    width: 100%;
+}
 
 
 /* FOOTER */

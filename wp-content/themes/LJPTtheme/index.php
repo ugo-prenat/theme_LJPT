@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="main-img" style="background-image: url('<?= get_theme_mod('main_img1') ?>')">
+<div class="main-img" style="background-image: url('<?= get_theme_mod('homepage_banner') ?>')">
     <div class="titles">
         <h1>Association <?= get_bloginfo('name') ?></h1>
         <p><?= get_bloginfo('description') ?></p>
