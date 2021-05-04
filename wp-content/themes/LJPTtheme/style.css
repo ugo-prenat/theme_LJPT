@@ -184,7 +184,8 @@ ul {
     width: 100%;
     background-image: url('img/background/bg-pattern.jpeg');
     padding-bottom: 10vh;
-    background-size: cover;
+    background-size: 100%;
+    /* background-repeat: repeat-y; */
     background-position-y: 0;
     transition: background-position-y .05s;
 }
