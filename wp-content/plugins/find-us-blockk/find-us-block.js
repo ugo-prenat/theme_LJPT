@@ -1,4 +1,4 @@
-wp.blocks.registerBlockType("ljpt-plugins/find-us-block", {
+wp.blocks.registerBlockType("ljpt/find-us-block", {
   title: "LJPT - Nous trouver",
   icon: "location",
   catagoty: "common",
@@ -9,9 +9,6 @@ wp.blocks.registerBlockType("ljpt-plugins/find-us-block", {
   edit: (props) => {
     function updateLocationInformation(event) {
       props.setAttributes({ locationInformation: event.target.value });
-    }
-    function updateColor(value) {
-      props.setAttributes({ color: value.hex });
     }
 
     return React.createElement(
@@ -29,7 +26,7 @@ wp.blocks.registerBlockType("ljpt-plugins/find-us-block", {
           style: {
             display: "flex",
             flexDirection: "column",
-            width: "55%",
+            width: "100%",
           },
         },
         React.createElement(
@@ -38,12 +35,13 @@ wp.blocks.registerBlockType("ljpt-plugins/find-us-block", {
             style: {
               fontWeight: "600",
               margin: "5px 0",
-              color: props.attributes.color,
+              color: '#94CB4F',
             },
           },
           "Information de localisation :"
         ),
         React.createElement("textarea", {
+          rows: '7',
           value: props.attributes.locationInformation,
           onChange: updateLocationInformation,
           style: {
@@ -51,24 +49,11 @@ wp.blocks.registerBlockType("ljpt-plugins/find-us-block", {
             outline: "none",
             width: "100%",
             height: "-webkit-fill-available",
-            border: "2px solid " + props.attributes.color,
+            border: "2px solid #94CB4F",
             padding: "5px",
           },
         })
       ),
-      React.createElement(
-        "div",
-        {
-          style: {
-            width: "40%",
-            height: "100%",
-          },
-        },
-        React.createElement(wp.components.ColorPicker, {
-          color: props.attributes.color,
-          onChangeComplete: updateColor,
-        })
-      )
     );
   },
 
@@ -93,7 +78,7 @@ wp.blocks.registerBlockType("ljpt-plugins/find-us-block", {
             viewBox: "0 0 512 512",
             width: "35",
             style: {
-              fill: props.attributes.color,
+              fill: '#94CB4F',
             },
           },
           React.createElement(
@@ -105,7 +90,7 @@ wp.blocks.registerBlockType("ljpt-plugins/find-us-block", {
             })
           )
         ),
-        React.createElement("p", {style: {color: props.attributes.color}}, "Nous trouver")
+        React.createElement("p", {style: {color: '#94CB4F'}}, "Nous trouver")
       ),
       React.createElement(
         "div",

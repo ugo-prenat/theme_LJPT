@@ -17,6 +17,12 @@ body {
 h1, h2, h3, p {
     margin: 0;
 }
+h3 {
+    font-family: 'cool crayon', 'poppins', sans-serif;
+    margin: 10px 0;
+    color: #94CB4F;
+    font-size: 23px;
+}
 ul {
     padding: 0;
     margin: 0;
@@ -147,7 +153,6 @@ ul {
 /* DEFAULT TEMPLATE */
 .main {
     width: 60%;
-    padding-top: 10vh;
 }
 
 /* MAIN IMG */
@@ -173,11 +178,12 @@ ul {
 
 /* ARTICLES */
 .main-container {
-    min-height: 85vh;
+    min-height: 75vh;
     display: flex;
     justify-content: center;
     width: 100%;
     background-image: url('img/background/bg-pattern.jpeg');
+    padding-bottom: 10vh;
     background-size: cover;
     background-position-y: 0;
     transition: background-position-y .05s;
@@ -342,7 +348,7 @@ ul {
     text-align: left;
     flex-direction: column;
 }
-.find-us-block-container .block-content p {
+.find-us-block-container .block-content {
     padding: 0 3%;
 }
 iframe {

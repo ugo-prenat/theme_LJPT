@@ -14,9 +14,6 @@ wp.blocks.registerBlockType("ljpt-plugins/letter-and-phone-block", {
     function updatePhoneNumber(event) {
       props.setAttributes({ phoneNumber: event.target.value });
     }
-    function updateColor(value) {
-      props.setAttributes({ color: value.hex });
-    }
 
     return React.createElement(
       "div",
@@ -30,12 +27,12 @@ wp.blocks.registerBlockType("ljpt-plugins/letter-and-phone-block", {
       React.createElement(
         "div",
         {
-          style: { display: "flex", flexDirection: "column", width: "55%" },
+          style: { display: "flex", justifyContent: "space-between", width: "100%" },
         },
         React.createElement(
           "div",
           {
-            style: { width: "100%" },
+            style: { width: "45%" },
           },
           React.createElement(
             "p",
@@ -43,7 +40,7 @@ wp.blocks.registerBlockType("ljpt-plugins/letter-and-phone-block", {
               style: {
                 fontWeight: "600",
                 marginBottom: "0",
-                color: props.attributes.color,
+                color: '#94CB4F',
               },
             },
             "Courrier :"
@@ -55,7 +52,7 @@ wp.blocks.registerBlockType("ljpt-plugins/letter-and-phone-block", {
               resize: "vertical",
               outline: "none",
               width: "100%",
-              border: "2px solid " + props.attributes.color,
+              border: '2px solid #94CB4F',
               padding: "5px",
             },
             value: props.attributes.postalAddress,
@@ -65,7 +62,7 @@ wp.blocks.registerBlockType("ljpt-plugins/letter-and-phone-block", {
         React.createElement(
           "div",
           {
-            style: { width: "100%" },
+            style: { width: "45%" },
           },
           React.createElement(
             "p",
@@ -73,19 +70,19 @@ wp.blocks.registerBlockType("ljpt-plugins/letter-and-phone-block", {
               style: {
                 fontWeight: "600",
                 marginBottom: "0",
-                color: props.attributes.color,
+                color: '#94CB4F',
               },
             },
             "T\xE9l\xE9phone :"
           ),
           React.createElement("textarea", {
-            rows: "2",
+            rows: "3",
             placeholder: "Num\xE9ro de T\xE9l\xE9phone",
             style: {
               resize: "vertical",
               outline: "none",
               width: "100%",
-              border: "2px solid " + props.attributes.color,
+              border: "2px solid " + '#94CB4F',
               padding: "5px",
             },
             value: props.attributes.phoneNumber,
@@ -93,19 +90,6 @@ wp.blocks.registerBlockType("ljpt-plugins/letter-and-phone-block", {
           })
         )
       ),
-      React.createElement(
-        "div",
-        {
-          style: {
-            width: "40%",
-            height: "100%",
-          },
-        },
-        React.createElement(wp.components.ColorPicker, {
-          color: props.attributes.color,
-          onChangeComplete: updateColor,
-        })
-      )
     );
   },
 
@@ -132,7 +116,7 @@ wp.blocks.registerBlockType("ljpt-plugins/letter-and-phone-block", {
               width: "35",
               height: "35",
               viewBox: "0 0 957.6 957.6",
-              style: { fill: props.attributes.color },
+              style: { fill: '#94CB4F' },
             },
             React.createElement("path", {
               d:
@@ -149,7 +133,7 @@ wp.blocks.registerBlockType("ljpt-plugins/letter-and-phone-block", {
           ),
           React.createElement(
             "p",
-            { style: { color: props.attributes.color } },
+            { style: { color: '#94CB4F' } },
             "Courrier"
           )
         ),
@@ -178,7 +162,7 @@ wp.blocks.registerBlockType("ljpt-plugins/letter-and-phone-block", {
               width: "35",
               height: "35",
               viewBox: "0 0 513.6 513.6",
-              style: { fill: props.attributes.color },
+              style: { fill: '#94CB4F' },
             },
             React.createElement("path", {
               d:
@@ -187,7 +171,7 @@ wp.blocks.registerBlockType("ljpt-plugins/letter-and-phone-block", {
           ),
           React.createElement(
             "p",
-            { style: { color: props.attributes.color } },
+            { style: { color: '#94CB4F' } },
             "T\xE9l\xE9phone"
           )
         ),
