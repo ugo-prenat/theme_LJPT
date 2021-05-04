@@ -1,4 +1,4 @@
-wp.blocks.registerBlockType("ljpt-plugin/letter-and-phone-block", {
+wp.blocks.registerBlockType("ljpt-plugins/letter-and-phone-block", {
   title: "LJPT - Courrier et téléphone",
   icon: "phone",
   catagoty: "common",
@@ -21,50 +21,91 @@ wp.blocks.registerBlockType("ljpt-plugin/letter-and-phone-block", {
     return React.createElement(
       "div",
       {
-        style: {width: '100%'},
+        style: {
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-between",
+        },
       },
       React.createElement(
         "div",
         {
-          style: {display: 'flex', justifyContent: 'space-between'},
+          style: { display: "flex", flexDirection: "column", width: "55%" },
         },
         React.createElement(
           "div",
           {
-            style: {width: '45%'},
+            style: { width: "100%" },
           },
-          React.createElement("p", {
-            style: {fontWeight: '600', marginBottom: '0', color: props.attributes.color}
-          }, "Courrier :"),
+          React.createElement(
+            "p",
+            {
+              style: {
+                fontWeight: "600",
+                marginBottom: "0",
+                color: props.attributes.color,
+              },
+            },
+            "Courrier :"
+          ),
           React.createElement("textarea", {
             rows: "3",
             placeholder: "Adresse postale",
-            style: {resize: 'vertical', outline: 'none', width: '100%', border: '2px solid ' + props.attributes.color, padding: '5px'},
+            style: {
+              resize: "vertical",
+              outline: "none",
+              width: "100%",
+              border: "2px solid " + props.attributes.color,
+              padding: "5px",
+            },
             value: props.attributes.postalAddress,
-            onChange: updatePostalAdress
+            onChange: updatePostalAdress,
           })
         ),
         React.createElement(
           "div",
           {
-            style: {width: '45%'},
+            style: { width: "100%" },
           },
-          React.createElement("p", {
-            style: {fontWeight: '600', marginBottom: '0', color: props.attributes.color}
-          }, "T\xE9l\xE9phone :"),
+          React.createElement(
+            "p",
+            {
+              style: {
+                fontWeight: "600",
+                marginBottom: "0",
+                color: props.attributes.color,
+              },
+            },
+            "T\xE9l\xE9phone :"
+          ),
           React.createElement("textarea", {
-            rows: "3",
+            rows: "2",
             placeholder: "Num\xE9ro de T\xE9l\xE9phone",
-            style: {resize: 'vertical', outline: 'none', width: '100%', border: '2px solid ' + props.attributes.color, padding: '5px'},
+            style: {
+              resize: "vertical",
+              outline: "none",
+              width: "100%",
+              border: "2px solid " + props.attributes.color,
+              padding: "5px",
+            },
             value: props.attributes.phoneNumber,
-            onChange: updatePhoneNumber
+            onChange: updatePhoneNumber,
           })
         )
       ),
-      React.createElement(wp.components.ColorPicker, {
-        color: props.attributes.color,
-        onChangeComplete: updateColor,
-      })
+      React.createElement(
+        "div",
+        {
+          style: {
+            width: "40%",
+            height: "100%",
+          },
+        },
+        React.createElement(wp.components.ColorPicker, {
+          color: props.attributes.color,
+          onChangeComplete: updateColor,
+        })
+      )
     );
   },
 
@@ -91,7 +132,7 @@ wp.blocks.registerBlockType("ljpt-plugin/letter-and-phone-block", {
               width: "35",
               height: "35",
               viewBox: "0 0 957.6 957.6",
-              style: {fill: props.attributes.color}
+              style: { fill: props.attributes.color },
             },
             React.createElement("path", {
               d:
@@ -106,7 +147,11 @@ wp.blocks.registerBlockType("ljpt-plugin/letter-and-phone-block", {
                 "M109.9 212.5h144.9c0.1 0 0.3 0 0.4 0 24.2-0.2 43.8-19.8 44-44 0-0.1 0-0.3 0-0.4v-145c0-13.4-11-22.3-22.4-22.3 -5.5 0-11 2-15.6 6.6L94.1 174.5C80.1 188.5 90 212.5 109.9 212.5z",
             })
           ),
-          React.createElement("p", {style: {color: props.attributes.color}}, "Courrier")
+          React.createElement(
+            "p",
+            { style: { color: props.attributes.color } },
+            "Courrier"
+          )
         ),
         React.createElement(
           "div",
@@ -133,14 +178,18 @@ wp.blocks.registerBlockType("ljpt-plugin/letter-and-phone-block", {
               width: "35",
               height: "35",
               viewBox: "0 0 513.6 513.6",
-              style: {fill: props.attributes.color}
+              style: { fill: props.attributes.color },
             },
             React.createElement("path", {
               d:
                 "M499.7 377l-71.7-71.7c-25.6-25.6-69.1-15.4-79.4 17.9 -7.7 23-33.3 35.8-56.3 30.7 -51.2-12.8-120.3-79.4-133.1-133.1 -7.7-23 7.7-48.6 30.7-56.3 33.3-10.2 43.5-53.8 17.9-79.4l-71.7-71.7c-20.5-17.9-51.2-17.9-69.1 0l-48.6 48.6c-48.6 51.2 5.1 186.9 125.4 307.2 120.3 120.3 256 176.6 307.2 125.4l48.6-48.6C517.6 425.6 517.6 394.9 499.7 377z",
             })
           ),
-          React.createElement("p", {style: {color: props.attributes.color}}, "T\xE9l\xE9phone")
+          React.createElement(
+            "p",
+            { style: { color: props.attributes.color } },
+            "T\xE9l\xE9phone"
+          )
         ),
         React.createElement(
           "div",

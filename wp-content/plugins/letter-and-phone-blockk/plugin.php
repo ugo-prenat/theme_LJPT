@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Name: Courrier et téléphone
+* Plugin Name: Block "courrier" et "téléphone"
 */
 
 add_action('enqueue_block_editor_assets', function() {

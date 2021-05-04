@@ -6,7 +6,9 @@
 <?php get_header() ?>
 
 <div class="main-container">
-    <?= get_the_content() ?>
+    <div class="main">
+        <?= get_the_content() ?>
+    </div>
 </div>
 
 <?php get_footer() ?>

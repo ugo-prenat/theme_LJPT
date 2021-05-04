@@ -144,6 +144,12 @@ ul {
     background-color: rgba(251, 164, 34, .3);
 }
 
+/* DEFAULT TEMPLATE */
+.main {
+    width: 60%;
+    padding-top: 10vh;
+}
+
 /* MAIN IMG */
 .main-img {
     width: 93%;
@@ -158,7 +164,7 @@ ul {
     display: flex;
     flex-direction: column;
 }
-.main-img .titles h1 {
+.main-img .titles h1, .main-img .titles h2 {
     font-size: 45px;
 }
 .main-img .titles p {
@@ -170,14 +176,14 @@ ul {
     min-height: 85vh;
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 100%;
     background-image: url('img/background/bg-pattern.jpeg');
     background-size: cover;
     background-position-y: 0;
     transition: background-position-y .05s;
 }
 .article-list-container {
-    width: 100%;
+    width: 60%;
     list-style: none;
     position: relative;
     top: -20vh;
@@ -288,9 +294,15 @@ ul {
     justify-content: center;
 }
 
-/* LETTER AND PHONE BLOCK */
+/* GUTENBERG BLOCKS */
 .letter-and-phone-block-container {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.find-us-block-container {
+    width: 100%;
+    height: 600px;
     display: flex;
     justify-content: space-between;
 }
@@ -306,18 +318,18 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 115px;
     height: 100%;
-    color: #94CB4F;
 }
-/* svg {
-    fill: #94CB4F
-} */
 .block-title p {
-    margin-top: 10px;
+    margin: 10px 10px 0 10px;
+    text-align: center;
+}
+.block-content p {
+    white-space: pre-wrap;
 }
 .block-content {
-    width: 70%;
+    width: -webkit-fill-available;
     height: 100%;
     display: flex;
     align-items: center;
@@ -325,6 +337,20 @@ ul {
     border-radius: 0 10px 10px 0;
     text-align: center;
     font-size: 15px;
+}
+.find-us-block-container .block-content {
+    text-align: left;
+    flex-direction: column;
+}
+.find-us-block-container .block-content p {
+    padding: 0 3%;
+}
+iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    border: none;
+    margin-top: 20px;
 }
 textarea {
     resize: horizontal;

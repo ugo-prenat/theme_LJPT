@@ -1,7 +1,7 @@
 <?php
 
 require_once 'customize/main-menu-img.php';
-require_once 'customize/homepage-banner.php';
+require_once 'customize/page-banner.php';
 
 add_action('after_setup_theme', function () {
     add_theme_support('title-tag');
