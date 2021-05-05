@@ -65,7 +65,6 @@ add_action('customize_register', function(WP_Customize_Manager $manager) {
         'label' => 'Choix de la bannière'
     ]);
 
-
     // $manager->add_control(new WP_Customize_Image_Control($manager, 'homepage_banner', [
     //     'section' => 'homepage_banner_section',
     //     'label' => 'Choix de la bannière'
