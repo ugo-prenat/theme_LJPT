@@ -1,18 +1,18 @@
 <?php
 /**
-* Template Name: LJPT - Page qui sommes nous ?
+* Template Name: LJPT - Page bonus
 */
 ?>
 <?php get_header() ?>
 
-<div class="main-img" style="background-image: url('<?= get_theme_mod('about_page_banner') ?>')">
+<div class="main-img" style="background-image: url('<?= get_theme_mod('bonus_page_banner') ?>')">
     <div class="titles">
         <h2><?php wp_title('') ?></h2>
     </div>
     <div class="fade"></div>
 </div>
 
-<div class="main-container about-page-main-container">
+<div class="main-container bonus-page-main-container">
     <div class="main">
         <?= get_the_content() ?>
     </div>

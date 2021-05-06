@@ -9,9 +9,10 @@
     <div class="titles">
         <h2><?php wp_title('') ?></h2>
     </div>
+    <div class="fade"></div>
 </div>
 
-<div class="main-container">
+<div class="main-container practical-data-page-main-container">
     <div class="main">
         <?= get_the_content() ?>
     </div>

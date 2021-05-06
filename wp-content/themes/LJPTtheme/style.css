@@ -63,7 +63,7 @@ ul {
 .menu-container ul a {
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 17px;
 }
 .menu-container .menu-img-container {
     height: 140%;
@@ -97,17 +97,6 @@ ul {
 .menu-container .active a {
     font-weight: 600;
 }
-/* .menu-container .active::before, .menu-container .menu-item-object-page::before {
-    content: '';
-    position: absolute;
-    right: -10%;
-    top: 10%;
-    width: 120%;
-    height: 80%;
-    transform: rotate(-1.5deg);
-    background-color: rgba(251, 164, 34, .3);
-    z-index: -1;
-} */
 /* SUB-MENU */
 .menu-container .menu-item-has-children::after {
     content: '';
@@ -158,9 +147,10 @@ ul {
 /* MAIN IMG */
 .main-img {
     width: 93%;
-    height: 55vh;
+    height: 50vh;
+    position: relative;
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     color: white;
     padding: 80px 0 0 7%;
     font-family: 'cool crayon', 'poppins', sans-serif;
@@ -175,6 +165,14 @@ ul {
 .main-img .titles p {
     font-size: 25px;
 }
+.fade {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(179.69deg, rgba(255, 255, 255, 0) 38.28%, rgba(255, 255, 255, 0.33) 55.88%, rgba(255, 255, 255, 0.76) 72.73%, #FFFFFF 88.33%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 
 /* ARTICLES */
 .main-container {
@@ -185,7 +183,6 @@ ul {
     background-image: url('img/background/bg-pattern.jpeg');
     padding-bottom: 10vh;
     background-size: 100%;
-    /* background-repeat: repeat-y; */
     background-position-y: 0;
     transition: background-position-y .05s;
 }
@@ -193,7 +190,7 @@ ul {
     width: 60%;
     list-style: none;
     position: relative;
-    top: -20vh;
+    top: -15vh;
 }
 .article {
     display: flex;

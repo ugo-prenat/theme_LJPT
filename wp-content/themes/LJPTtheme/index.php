@@ -4,6 +4,7 @@
         <h1>Association <?= get_bloginfo('name') ?></h1>
         <p><?= get_bloginfo('description') ?></p>
     </div>
+    <div class="fade"></div>
 </div>
 <div class="main-container">
 
