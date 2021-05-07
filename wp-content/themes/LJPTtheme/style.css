@@ -5,7 +5,9 @@ Theme Name: Le jeu pour tous
     font-family: 'cool crayon';
     src: url('fonts/DK_Cool_Crayon.ttf') format('truetype');
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'poppins', sans-serif;
     margin: 0;
@@ -14,18 +16,32 @@ body {
     flex-direction: column;
     align-items: center;
 }
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
     margin: 0;
 }
 h3 {
     font-family: 'cool crayon', 'poppins', sans-serif;
     margin: 10px 0;
-    color: #94CB4F;
     font-size: 23px;
+    padding-top: 100px;
+}
+h4 {
+    font-family: 'cool crayon', 'poppins', sans-serif;
+    font-size: 20px;
+    margin: 15px 0;
 }
 ul {
     padding: 0;
     margin: 0;
+}
+.border-radius img {
+    border-radius: 10px !important;
+}
+figcaption {
+    text-align: center;
+}
+.margin-top-100 {
+    margin-top: 100px;
 }
 
 /* MENU */
@@ -376,6 +392,23 @@ footer {
 }
 footer a {
     color: white;
+}
+
+/* TEMPLATES */
+.activity-page-main-container h3, .activity-page-main-container a {
+    color: #7438AD;
+}
+.community-page-main-container h3, .community-page-main-container a {
+    color: #2F9D55;
+}
+.practical-data-page-main-container h3, .practical-data-page-main-container a {
+    color: #94CB4F;
+}
+.about-page-main-container h3, .about-page-main-container a {
+    color: #FBA422;
+}
+.bonus-page-main-container h3, .bonus-page-main-container a {
+    color: #FBA422;
 }
 
 /* RESPONSIVE */
