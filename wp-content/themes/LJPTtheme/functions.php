@@ -69,26 +69,18 @@ add_action('widgets_init', function() {
     register_sidebar([
         'id' => 'sidebar-homepage',
         'name' => 'sidebar accueil',
-        'before_widget'  => '<div class="sidebar-container">',
-        'after_widget'   => '</div>',
     ]);
     register_sidebar([
         'id' => 'sidebar-practical-data',
         'name' => 'sidebar infos pratiques',
-        'before_widget'  => '<div class="sidebar-container">',
-        'after_widget'   => '</div>',
     ]);
     register_sidebar([
         'id' => 'sidebar-community',
         'name' => 'sidebar collectivités',
-        'before_widget'  => '<div class="sidebar-container">',
-        'after_widget'   => '</div>',
     ]);
     register_sidebar([
         'id' => 'sidebar-about-us',
         'name' => 'sidebar qui sommes nous',
-        'before_widget'  => '<div class="sidebar-container">',
-        'after_widget'   => '</div>',
     ]);
 });
 

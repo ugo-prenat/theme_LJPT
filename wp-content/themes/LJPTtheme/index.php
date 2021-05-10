@@ -44,6 +44,8 @@
     <?php else: ?>
         <p>Aucun article</p>
     <?php endif; ?>
-
+    <div class="paginate-container">
+        <?= paginate_links() ?>
+    </div>
 </div>
 <?php get_footer() ?>

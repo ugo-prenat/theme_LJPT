@@ -10,7 +10,9 @@
 </head>
 <body>
     <!-- MENU -->
-    <div class="menu-container">
+    <div
+    class="menu-container"
+    style="<?php if(is_user_logged_in()) echo 'margin-top: 32px' ?>">
         <div class="left-menu-container menu-part-container">
             <?php wp_nav_menu(['theme_location' => 'main-menu-left']) ?>
         </div>
