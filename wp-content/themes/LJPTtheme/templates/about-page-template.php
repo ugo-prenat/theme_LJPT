@@ -9,7 +9,8 @@
     <div class="titles">
         <h2><?php wp_title('') ?></h2>
     </div>
-    <div class="fade"></div>
+    <?php get_sidebar('about-us') ?>
+    <!-- <div class="fade"></div> -->
 </div>
 
 <div class="main-container about-page-main-container">

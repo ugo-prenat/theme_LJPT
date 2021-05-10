@@ -2,6 +2,9 @@
 
 require_once 'customize/main-menu-img.php';
 require_once 'customize/page-banner.php';
+require_once 'widgets/newsletter-widget.php';
+require_once 'widgets/play-equality-widget.php';
+require_once 'widgets/sign-language-videos-widget.php';
 
 add_action('after_setup_theme', function () {
     add_theme_support('title-tag');
@@ -56,3 +59,36 @@ function get_post_img_url() {
 add_filter('the_content', function() {
     return preg_replace( '/<img[^>]+./', '', get_the_content());
 });
+
+add_action('widgets_init', function() {
+
+    register_widget(NewsletterWidget::class);
+    register_widget(PlayEqualityWidget::class);
+    register_widget(SignLanguageVideosWidget::class);
+
+    register_sidebar([
+        'id' => 'sidebar-homepage',
+        'name' => 'sidebar accueil',
+        'before_widget'  => '<div class="sidebar-container">',
+        'after_widget'   => '</div>',
+    ]);
+    register_sidebar([
+        'id' => 'sidebar-practical-data',
+        'name' => 'sidebar infos pratiques',
+        'before_widget'  => '<div class="sidebar-container">',
+        'after_widget'   => '</div>',
+    ]);
+    register_sidebar([
+        'id' => 'sidebar-community',
+        'name' => 'sidebar collectivités',
+        'before_widget'  => '<div class="sidebar-container">',
+        'after_widget'   => '</div>',
+    ]);
+    register_sidebar([
+        'id' => 'sidebar-about-us',
+        'name' => 'sidebar qui sommes nous',
+        'before_widget'  => '<div class="sidebar-container">',
+        'after_widget'   => '</div>',
+    ]);
+});
+

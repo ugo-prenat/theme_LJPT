@@ -162,13 +162,16 @@ figcaption {
 
 /* MAIN IMG */
 .main-img {
-    width: 93%;
+    width: 86%;
     height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     position: relative;
     background-size: cover;
     background-position: top;
     color: white;
-    padding: 80px 0 0 7%;
+    padding: 80px 7% 0 7%;
     font-family: 'cool crayon', 'poppins', sans-serif;
 }
 .main-img .titles {
@@ -410,6 +413,70 @@ footer a {
 .bonus-page-main-container h3, .bonus-page-main-container a {
     color: #FBA422;
 }
+
+/* WIDGETS */
+.widget-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 3vh 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    padding-bottom: 0;
+    cursor: pointer;
+    overflow: hidden;
+    transition: width .5s ease;
+}
+.widget-title {
+    display: flex;
+    align-items: center;
+}
+.widget-title p {
+    font-weight: 500;
+    color: #FBA422;
+    margin: 0 10px;
+}
+.widget-description {
+    height: 0;
+    padding-top: 10px;
+    font-size: 13px;
+    padding-bottom: 0;
+    margin-right: 40px;
+    color: black;
+    font-family: 'poppins', sans-serif;
+    text-align: justify;
+    transition-property: height, padding-bottom;
+    transition-duration: .5s;
+}
+.img-container {
+    height: 30px;
+}
+.widget-container .img-container svg, .widget-container .img-container img {
+    fill: #FBA422;
+    width: 30px;
+    height: 30px;
+}
+.widget-description a {
+    color: #fba422;
+}
+.newsletter-widget:hover .widget-description {
+    height: 20px;
+    padding-bottom: 10px;
+}
+.play-quality-widget:hover .widget-description {
+    height: 40px;
+    padding-bottom: 10px;
+}
+.sign-language-videos-widget:hover .widget-description {
+    height: 60px;
+    padding-bottom: 10px;
+}
+
+
 
 /* RESPONSIVE */
 @media screen and (max-width: 900px) {
