@@ -9,7 +9,7 @@
     <div class="titles">
         <h2><?php wp_title('') ?></h2>
     </div>
-    <!-- <div class="fade"></div> -->
+    <div class="fade"></div>
 </div>
 
 <div class="main-container bonus-page-main-container">

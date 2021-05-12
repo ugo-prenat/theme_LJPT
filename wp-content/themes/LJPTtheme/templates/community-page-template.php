@@ -10,7 +10,7 @@
         <h2><?php wp_title('') ?></h2>
     </div>
     <?php get_sidebar('community') ?>
-    <!-- <div class="fade"></div> -->
+    <div class="fade"></div>
 </div>
 
 <div class="main-container community-page-main-container">

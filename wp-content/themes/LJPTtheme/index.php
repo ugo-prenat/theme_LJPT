@@ -7,7 +7,7 @@
     <div class="sidebar-container">
         <?php get_sidebar('homepage') ?>
     </div>
-    <!-- <div class="fade"></div> -->
+    <div class="fade"></div>
 </div>
 <div class="main-container">
 
