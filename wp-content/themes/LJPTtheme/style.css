@@ -199,7 +199,7 @@ figcaption {
     padding-bottom: 3vh;
     background-size: 100%;
     background-position-y: 0;
-    transition: background-position-y .05s;
+    transition: background-position-y .1s;
 }
 .article-list-container {
     width: 60%;
@@ -419,6 +419,10 @@ footer .wp-login-container img {
 .bonus-page-main-container h3, .bonus-page-main-container a {
     color: #FBA422;
 }
+.catalogue-page-main-container {
+    height: 94vh;
+    padding-bottom: 0;
+}
 
 /* WIDGETS */
 .widget-container {
@@ -525,6 +529,53 @@ table tr:last-of-type td:last-of-type {
     padding: 3px 10px;
     border-radius: 5px;
 }
+
+/* TOP OF PAGE BTN */
+.top-of-page-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 1%;
+    bottom: 2%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #FBA422;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+.top-of-page-btn-container svg {
+    width: 15px;
+    height: 15px;
+    fill: #FBA422;
+    position: relative;
+    top: 0;
+}
+.top-of-page-btn-container:hover svg {
+    animation: top-of-page-anim 2s ease-in-out;
+}
+@keyframes top-of-page-anim {
+    0% {
+        top: 0;
+    } 49% {
+        top: -20px;
+        display: none;
+    } 50% {
+        top: 20px;
+        display: block;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+
+
+
+
+
 
 
 /* RESPONSIVE */

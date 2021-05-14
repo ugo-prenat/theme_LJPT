@@ -5,8 +5,8 @@
 ?>
 <?php get_header() ?>
 
-<div class="main-container">
+<div class="main-container catalogue-page-main-container" style="<?= is_user_logged_in() ? 'height: 90.5vh' : '' ?>">
     <?= get_the_content() ?>
 </div>
 
-<?php get_footer() ?>
+<?php wp_footer() ?>
