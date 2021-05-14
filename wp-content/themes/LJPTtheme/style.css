@@ -554,7 +554,7 @@ table tr:last-of-type td:last-of-type {
     top: 0;
 }
 .top-of-page-btn-container:hover svg {
-    animation: top-of-page-anim 2s ease-in-out;
+    animation: top-of-page-anim 1s ease-in-out;
 }
 @keyframes top-of-page-anim {
     0% {

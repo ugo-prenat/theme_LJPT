@@ -85,3 +85,12 @@ add_action('widgets_init', function() {
     ]);
 });
 
+function getTwitterShareLink($post_title, $post_url) {
+    return 'https://twitter.com/intent/tweet?text=' . str_replace(' ', '%20', $post_title) . '&url=' . $post_url;
+}
+function getFacebookShareLink($post_title, $post_url) {
+    return 'https://www.facebook.com/sharer.php?u=' . $post_url . '&t=' . str_replace(' ', '%20', $post_title);
+}
+function getWhatsappShareLink($post_title, $post_url) {
+    return 'https://api.whatsapp.com/send?text=' . str_replace(' ', '%20', $post_title) . '%20' . $post_url;
+}

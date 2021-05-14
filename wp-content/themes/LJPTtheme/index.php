@@ -32,6 +32,9 @@
                                 <img src="<?= get_template_directory_uri() . '/img/share.png' ?>" alt="Image paratger">
                                 <p>Partager</p>
                             </a>
+                            <a href="<?= getTwitterShareLink(get_the_title(), get_the_permalink()) ?>" target="_blank">T</a>
+                            <a href="<?= getFacebookShareLink(get_the_title(), get_the_permalink()) ?>" target="_blank">F</a>
+                            <a href="<?= getWhatsappShareLink(get_the_title(), get_the_permalink()) ?>" target="_blank">W</a>
                         </div>
                         <div class="back-articles-btns"></div>
                     </div>
