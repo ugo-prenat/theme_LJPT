@@ -23,8 +23,8 @@ add_action('wp_enqueue_scripts', function() {
     wp_enqueue_style( 'style', get_stylesheet_uri(), '', time());
     wp_enqueue_script('parallaxEffect', get_template_directory_uri() . '/js/parallaxEffect.js', [], time(), true);
     wp_enqueue_script('topOfPageBtn', get_template_directory_uri() . '/js/topOfPageBtn.js', [], false, true);
-    wp_enqueue_script('lottie-files-library', 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js', [], false, true);
-    wp_enqueue_script('lottie-files-animations', get_template_directory_uri() . '/js/animations.js', [], false, true);
+    wp_enqueue_script('lottie-files-library', 'https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js', [], false, true);
+    wp_enqueue_script('lottie-files-animations', get_template_directory_uri() . '/js/animations.js', [], time(), true);
 });
 
 add_action('after_setup_theme', function() {

@@ -43,6 +43,9 @@ figcaption {
 .margin-top-100 {
     margin-top: 100px;
 }
+.margin-bottom-100 {
+    margin-bottom: 100px;
+}
 
 /* MENU */
 .menu-container {
@@ -250,41 +253,125 @@ figcaption {
 }
 .article-content .article-btns {
     display: flex;
+    align-items: center;
     position: absolute;
     bottom: 28px;
     padding-top: 4px;
+    font-weight: 500;
     width: 89%;
     background-color: white;
 }
 .article-content .back-articles-btns {
     height: 31px;
 }
-.article-content .article-btns a {
+.article-btns .read-more-btn-container {
+    width: 160px;
+    height: 31px;
+}
+.article-btns .article-btn .read-more-btn {
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 14px;
     text-decoration: none;
+    background-color: rgba(251, 190, 34, 0.2);
+}
+.article-btns .article-btn .read-more-btn p {
+    margin-left: 10px;
+}
+.article-btns .animation-container {
+    width: 30px;
+    height: 30px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: rotate(-90deg);
+}
+.article-btns .share-btn .animation-container {
+    transform: rotate(0);
+    padding: 0 5px 0 0;
+    margin-top: -3px;
+}
+.article-btns .animation-container .animation {
+    transform: scale(2.5);
+}
+.article-btns .share-btn .animation-container .animation {
+    transform: scale(5);
+}
+/* .article-btns .read-more-btn lottie-player {
+    width: 80px;
+    height: 80px;
+    transform: rotate(-90deg);
+} */
+/* .article-btns .read-more-btn svg {
+    height: 18px;
+    width: 18px;
+    fill: #FBA422;
+    margin-left: 7px;
+} */
+.article-btns .share-btn {
+    width: 91px;
+    height: 21px;
+    display: flex;
+    background-color: rgba(63, 73, 172, 0.2);
+    color: #3F49AC;
     padding: 5px 15px;
     border-radius: 50px;
     font-size: 14px;
-    font-weight: 500;
+    margin-left: 10px;
+    overflow: hidden;
+    cursor: pointer;
 }
-.article-btns a img {
+.article-btns .share-btn div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.article-btns .share-btn .share-btn-social-network{
+    display: none;
+    align-items: center;
+    width: 100%;
+}
+.article-btns .share-btn .share-btn-social-network a {
     height: 15px;
 }
-.article-btns .share-btn {
-    margin-left: 15px;
-    background-color: rgba(63, 73, 172, 0.2);
-    color: #3F49AC;
+.article-btns .share-btn .share-btn-social-network a svg {
+    width: 15px;
+    height: 15px;
+    fill: #3F49AC;
+}
+.article-btns .share-btn .share-btn-title {
+    position: relative;
+}
+.article-btns .share-btn .share-btn-title p {
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    transition-delay: .1s;
+}
+.article-btns .share-btn:hover .share-btn-title p {
+    transform: scale(0);
+}
+.article-btns .share-btn .share-btn-social-network a {
+    transform: scale(0);
+    transition: all .5s ease-in-out;
+    transition-delay: 1s;
+}
+/* .article-btns .share-btn:hover .share-btn-social-network {
+    display: flex;
+} */
+.article-btns .share-btn:hover .share-btn-social-network a {
+    transform: scale(1);
 }
 .article-btns .share-btn img {
+    height: 15px;
     margin-right: 7px;
-}
-.article-btns .read-more-btn {
-    background-color: rgba(251, 190, 34, 0.2);
-    color: #FBA422;
-}
-.article-btns .read-more-btn img {
-    margin-left: 7px;
 }
 
 /* SINGLE POST */
