@@ -352,22 +352,11 @@ figcaption {
 }
 .article-btns .share-btn .share-btn-title p {
     transform: scale(1);
-    transition: transform .3s ease-out;
-    transition-delay: .1s;
-}
-.article-btns .share-btn:hover .share-btn-title p {
-    transform: scale(0);
+    transition: transform .5s ease-out;
 }
 .article-btns .share-btn .share-btn-social-network a {
     transform: scale(0);
-    transition: all .5s ease-in-out;
-    transition-delay: 1s;
-}
-/* .article-btns .share-btn:hover .share-btn-social-network {
-    display: flex;
-} */
-.article-btns .share-btn:hover .share-btn-social-network a {
-    transform: scale(1);
+    transition: transform .5s ease-in-out;
 }
 .article-btns .share-btn img {
     height: 15px;
@@ -478,6 +467,7 @@ footer {
 }
 footer p {
     font-size: 14px;
+    color: white;
 }
 footer a {
     color: white;
