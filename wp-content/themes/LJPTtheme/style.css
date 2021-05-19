@@ -8,6 +8,9 @@ Theme Name: Le jeu pour tous
 html {
     scroll-behavior: smooth;
 }
+h1 {
+    font-size: 40px;
+}
 body {
     font-family: 'poppins', sans-serif;
     margin: 0;
@@ -45,6 +48,9 @@ figcaption {
 }
 .margin-bottom-100 {
     margin-bottom: 100px;
+}
+.practical-data-page-main-container {
+    padding-bottom: 15vh !important;
 }
 
 /* MENU */
@@ -177,7 +183,7 @@ figcaption {
     flex-direction: column;
 }
 .main-img .titles h1, .main-img .titles h2 {
-    font-size: 45px;
+    font-size: 55px;
 }
 .main-img .titles p {
     font-size: 25px;
@@ -499,6 +505,9 @@ footer .wp-login-container img {
 .catalogue-page-main-container {
     height: 94vh;
     padding-bottom: 0;
+}
+.newsletter-page-main-container h3, .newsletter-page-main-container a {
+    color: #7438AD;
 }
 
 /* WIDGETS */

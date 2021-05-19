@@ -5,9 +5,9 @@
 ?>
 <?php get_header() ?>
 
-<div class="main-img" style="background-image: url('<?= get_theme_mod('practical_data_page_banner') ?>')">
+<div class="main-img" style="background-image: url('<?= get_theme_mod('newsletter_page_banner') ?>')">
     <div class="titles">
-        <h2><?php wp_title('') ?></h2>
+        <h2>Inscription à la newsletter</h2>
     </div>
     <div class="fade"></div>
 </div>

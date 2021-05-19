@@ -51,8 +51,8 @@ wp.blocks.registerBlockType("ljpt-pluginss/contact-form-block", {
                   padding: "0 5px",
                   backgroundColor: "white",
                   display: "block",
-                  fontSize: "14px",
-                  color: "#94CB4F",
+                  fontSize: "15px",
+                  fontWeight: '500'
                 },
               },
               "Nom"
@@ -88,8 +88,8 @@ wp.blocks.registerBlockType("ljpt-pluginss/contact-form-block", {
                   padding: "0 5px",
                   backgroundColor: "white",
                   display: "block",
-                  fontSize: "14px",
-                  color: "#94CB4F",
+                  fontSize: "15px",
+                  fontWeight: '500'
                 },
               },
               "Mail"
@@ -124,8 +124,8 @@ wp.blocks.registerBlockType("ljpt-pluginss/contact-form-block", {
                 padding: "0 5px",
                 backgroundColor: "white",
                 display: "block",
-                fontSize: "14px",
-                color: "#94CB4F",
+                fontSize: "15px",
+                fontWeight: '500'
               },
             },
             "Message"
@@ -208,13 +208,13 @@ wp.blocks.registerBlockType("ljpt-pluginss/contact-form-block", {
               {
                 style: {
                   position: "absolute",
-                  top: "-12px",
+                  top: "-14px",
                   left: "20px",
                   padding: "0 5px",
                   backgroundColor: "white",
                   display: "block",
-                  fontSize: "14px",
-                  color: "#94CB4F",
+                  fontSize: "15px",
+                  fontWeight: '500'
                 },
               },
               "Nom"
@@ -245,13 +245,13 @@ wp.blocks.registerBlockType("ljpt-pluginss/contact-form-block", {
               {
                 style: {
                   position: "absolute",
-                  top: "-12px",
+                  top: "-14px",
                   left: "20px",
                   padding: "0 5px",
                   backgroundColor: "white",
                   display: "block",
-                  fontSize: "14px",
-                  color: "#94CB4F",
+                  fontSize: "15px",
+                  fontWeight: '500'
                 },
               },
               "Mail"
@@ -281,13 +281,13 @@ wp.blocks.registerBlockType("ljpt-pluginss/contact-form-block", {
             {
               style: {
                 position: "absolute",
-                top: "-12px",
+                top: "-14px",
                 left: "20px",
                 padding: "0 5px",
                 backgroundColor: "white",
                 display: "block",
-                fontSize: "14px",
-                color: "#94CB4F",
+                fontSize: "15px",
+                fontWeight: '500'
               },
             },
             "Message"
