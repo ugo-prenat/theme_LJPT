@@ -80,3 +80,27 @@ for (let i = 0; i < shareBtnContainers.length; i++) {
         }, 100)
     })
 }
+
+// Hamburger menu animation
+const hambMenuContainer = document.querySelector('.hamb-menu-container')
+
+const HambMenuAnim = lottie.loadAnimation({
+    container: hambMenuContainer,
+    path: `${PATH}/animations/hamb-menu-animation.json`,
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+})
+
+hambMenuContainer.addEventListener('click', () => {
+    const menuContainer = document.querySelector('.menu-container')
+    
+    if(menuContainer.classList.contains('active-menu-container')) {
+        menuContainer.classList.remove('active-menu-container')
+        HambMenuAnim.setDirection(-1)
+        HambMenuAnim.playSegments([65, 96], true)
+    } else {
+        menuContainer.classList.add('active-menu-container')
+        HambMenuAnim.playSegments([0, 65], true)
+    }
+})

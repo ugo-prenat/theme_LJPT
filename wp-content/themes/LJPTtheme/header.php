@@ -10,16 +10,19 @@
 </head>
 <body>
     <!-- MENU -->
-    <div
-    class="menu-container"
-    style="<?php if(is_user_logged_in()) echo 'margin-top: 32px' ?>">
+    <div class="responsive-menu-container" style="<?php if(is_user_logged_in()) echo 'margin-top: 32px' ?>">
+        <div class="hamb-menu-container"></div>
+        <img src="<?= get_theme_mod('main_menu_large_img') ?>" class="large-img" alt="Logo le jeu pour tous">
+    </div>
+
+    <div class="menu-container" style="<?php if(is_user_logged_in()) echo 'margin-top: 32px' ?>">
         <div class="left-menu-container menu-part-container">
             <?php wp_nav_menu(['theme_location' => 'main-menu-left']) ?>
         </div>
 
         <div class="menu-img-container">
             <div class="menu-img">
-                <img src="<?= get_theme_mod('main_menu_img') ?>" alt="Logo le jeu pour tous">
+                <img src="<?= get_theme_mod('main_menu_small_img') ?>" class="small-img" alt="Logo le jeu pour tous">
                 <div class="box-shadow-container"></div>
             </div>
         </div>
