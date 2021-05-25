@@ -52,6 +52,9 @@ figcaption {
 .practical-data-page-main-container {
     padding-bottom: 15vh !important;
 }
+.height-300 img {
+    height: 300px !important;
+}
 
 /* MENU */
 .menu-container, .responsive-menu-container {
@@ -653,6 +656,14 @@ table tr:last-of-type td:last-of-type {
         top: 0;
     }
 }
+/* WP IMAGES */
+.wp-block-column {
+    display: flex;
+    align-items: center;
+}
+.wp-block-image img {
+    height: auto;
+}
 
 /* RESPONSIVE */
 @media screen and (max-width: 1100px) {
@@ -726,6 +737,12 @@ table tr:last-of-type td:last-of-type {
         padding-bottom: 5px;
     }
 }
+@media screen and (max-width: 800px) {
+    /* MAIN CONTAINER */
+    .main-container .main {
+        width: 80%;
+    }
+}
 @media screen and (max-width: 780px) {
     .main-img {
         flex-direction: column;
@@ -745,6 +762,9 @@ table tr:last-of-type td:last-of-type {
     }
 }
 @media screen and (max-width: 700px) {
+    h3 {
+        padding-top: 50px;
+    }
     /* ARTICLES */
     .article-list-container {
         width: 60%;
@@ -784,13 +804,18 @@ table tr:last-of-type td:last-of-type {
     }
     /* FOOTER */
     footer {
-        width: 75%;
+        width: 74%;
+        padding: 0 13%;
     }
 }
 @media screen and (max-width: 570px) {
     /* TITLES */
     .main-img .titles h1, .main-img .titles h2 {
         font-size: 40px;
+    }
+    /* TOP OF PAGE BTN */
+    .top-of-page-btn-container {
+        display: none;
     }
 }
 @media screen and (max-width: 500px) {
@@ -821,13 +846,10 @@ table tr:last-of-type td:last-of-type {
     .article-content h2 {
         font-size: 20px;
     }
-    /* TOP OF PAGE BTN */
-    .top-of-page-btn-container {
-        display: none;
-    }
     /* FOOTER */
     footer {
-        width: 100%;
+        width: 90%;
+        padding: 0 5%;
         justify-content: space-around;
     }
 }
