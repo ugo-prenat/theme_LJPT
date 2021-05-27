@@ -27,6 +27,7 @@ h3 {
     margin: 10px 0;
     font-size: 23px;
     padding-top: 100px;
+    width: 100%;
 }
 h4 {
     font-family: 'cool crayon', 'poppins', sans-serif;
@@ -171,6 +172,9 @@ figcaption {
 
 /* DEFAULT TEMPLATE */
 .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 60%;
 }
 
@@ -509,6 +513,9 @@ footer .wp-login-container img {
 .newsletter-page-main-container h3, .newsletter-page-main-container a {
     color: #7438AD;
 }
+.default-page-main-container h3, .default-page-main-container a {
+    color: #2F9D55;
+}
 
 /* WIDGETS */
 .widget-container {
@@ -525,6 +532,7 @@ footer .wp-login-container img {
     padding-bottom: 0;
     cursor: pointer;
     overflow: hidden;
+    z-index: +1;
     transition: width .5s ease;
 }
 .widget-title {
@@ -660,6 +668,7 @@ table tr:last-of-type td:last-of-type {
 .wp-block-column {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .wp-block-image img {
     height: auto;
@@ -733,6 +742,10 @@ table tr:last-of-type td:last-of-type {
     .menu-container .menu-item-has-children::after {
         display: none;
     }
+    /* TABLES */
+    .wp-block-table {
+        margin: 0;
+    }
 }
 @media screen and (max-width: 850px) {
     /* ARTICLES */
@@ -756,6 +769,12 @@ table tr:last-of-type td:last-of-type {
     }
     .sidebar-container {
         z-index: +1;
+    }
+    .sidebar-container .widget-container {
+        margin-bottom: 3vh;
+    }
+    .widget-container {
+        margin-bottom: 100px;
     }
 }
 @media screen and (max-width: 750px) {
@@ -804,6 +823,11 @@ table tr:last-of-type td:last-of-type {
     }
     .article .article-img {
         height: 150px;
+    }
+    /* TABLE */
+    .wp-block-table td {
+        padding: 5px;
+        font-size: 15px;
     }
     /* FOOTER */
     footer {
@@ -856,6 +880,21 @@ table tr:last-of-type td:last-of-type {
         justify-content: space-around;
     }
 }
+@media screen and (max-width: 480px) {
+    /* TABLE */
+    .wp-block-table td {
+        padding: 0px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 450px) {
+    h4, h3 {
+        font-size: 18px;
+    }
+    figcaption {
+        font-size: 14px;
+    }
+}
 @media screen and (max-width: 420px) {
     /* TITLES */
     .main-img .titles h1, .main-img .titles h2 {
@@ -866,6 +905,9 @@ table tr:last-of-type td:last-of-type {
     }
 }
 @media screen and (max-width: 400px) {
+    .main p {
+        font-size: 14px;
+    }
     /* ARTICLES */
     .article-btns .animation-container {
         display: none;
@@ -889,10 +931,25 @@ table tr:last-of-type td:last-of-type {
         padding-top: 14px;
     }
 }
+@media screen and (max-width: 390px) {
+    /* TABLE */
+    .wp-block-table td {
+        font-size: 13px;
+    }
+}
 @media screen and (max-width: 370px) {
     /* FOOTER */
     footer .gtc-container {
         width: 175px;
+    }
+}
+@media screen and (max-width: 360px) {
+    /* TABLE */
+    .wp-block-table {
+        width: 110%;
+    }
+    .wp-block-table td {
+        font-size: 11px;
     }
 }
 @media screen and (max-width: 350px) {
@@ -900,11 +957,26 @@ table tr:last-of-type td:last-of-type {
         height: 60%;
     }
 }
+@media screen and (max-width: 340px) {
+    /* TABLE */
+    .wp-block-table {
+        width: 100%;
+    }
+    .wp-block-table td {
+        font-size: 9px;
+    }
+}
 @media screen and (max-width: 320px) {
     /* ARTICLES */
     .article-btns .share-btn .share-btn-title p {
         position: relative;
         left: -3px;
+    }
+}
+@media screen and (max-width: 310px) {
+    /* TABLE */
+    .wp-block-table {
+        width: 120%;
     }
 }
 @media screen and (max-width: 300px) {

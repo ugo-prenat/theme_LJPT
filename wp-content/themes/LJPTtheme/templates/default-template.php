@@ -5,7 +5,7 @@
 ?>
 <?php get_header() ?>
 
-<div class="main-container">
+<div class="main-container default-page-main-container">
     <div class="main">
         <?= get_the_content() ?>
     </div>

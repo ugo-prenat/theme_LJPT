@@ -139,7 +139,6 @@ wp.blocks.registerBlockType("ljpt-plugins/games-library-data-block", {
               minHeight: '200px',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center'
           }},
           React.createElement(
             "svg",
@@ -185,7 +184,6 @@ wp.blocks.registerBlockType("ljpt-plugins/games-library-data-block", {
               minHeight: '100%',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center'
           }},
           React.createElement(
             "svg",
@@ -227,7 +225,6 @@ wp.blocks.registerBlockType("ljpt-plugins/games-library-data-block", {
               minHeight: '100%',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center'
           }},
           React.createElement(
             "svg",
