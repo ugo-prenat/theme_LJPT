@@ -123,23 +123,33 @@ wp.blocks.registerBlockType("ljpt-plugins/games-library-data-block", {
   save: (props) => {
     return wp.element.createElement(
       "div",
-      null,
+      {
+        style: {
+          width: "100%",
+        },
+      },
       React.createElement(
         "div",
-        {style: {
-            display: 'flex',
-            justifyContent: 'flex-start',
-            height: 'auto',
-            marginTop: '50px'
-        }},
+        {
+          style: {
+            display: "flex",
+            justifyContent: "flex-start",
+            height: "auto",
+            marginTop: "50px",
+          },
+        },
         React.createElement(
           "div",
-          {style: {
-              width: '115px',
-              minHeight: '200px',
-              display: 'flex',
-              alignItems: 'center',
-          }},
+          {
+            style: {
+              width: "115px",
+              minHeight: "200px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: 'center'
+            },
+            class: "block-img"
+          },
           React.createElement(
             "svg",
             {
@@ -154,37 +164,54 @@ wp.blocks.registerBlockType("ljpt-plugins/games-library-data-block", {
         ),
         React.createElement(
           "div",
-          null,
+          {style: {
+            padding: '0 3%'
+          }},
           React.createElement(
             "h3",
-            {style: {
-                paddingTop: '10px',
-                margin: '0',
-            }},
+            {
+              style: {
+                paddingTop: "10px",
+                margin: "0",
+              },
+            },
             "Adh\xE9sion \xE0 l\u2019association"
           ),
-          React.createElement("p", {style: {
-              margin:'10px 0',
-              whiteSpace: 'pre-wrap'
-          }}, props.attributes.paragraph1)
+          React.createElement(
+            "p",
+            {
+              style: {
+                margin: "10px 0",
+                whiteSpace: "pre-wrap",
+                fontSize: "15px"
+              },
+            },
+            props.attributes.paragraph1
+          )
         )
       ),
       React.createElement(
         "div",
-        {style: {
-            display: 'flex',
-            justifyContent: 'flex-start',
-            height: 'auto',
-            marginTop: '100px'
-        }},
+        {
+          style: {
+            display: "flex",
+            justifyContent: "flex-start",
+            height: "auto",
+            marginTop: "100px",
+          },
+        },
         React.createElement(
           "div",
-          {style: {
-              width: '115px',
-              minHeight: '100%',
-              display: 'flex',
-              alignItems: 'center',
-          }},
+          {
+            style: {
+              width: "115px",
+              minHeight: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: 'center'
+            },
+            class: "block-img"
+          },
           React.createElement(
             "svg",
             {
@@ -199,33 +226,54 @@ wp.blocks.registerBlockType("ljpt-plugins/games-library-data-block", {
         ),
         React.createElement(
           "div",
-          null,
-          React.createElement("h3", {style: {
-              paddingTop: '10px',
-              margin: '0',
-          }}, "Pr\xEAt de jeux et jouets"),
-          React.createElement("p", {style: {
-              margin:'10px 0',
-              whiteSpace: 'pre-wrap'
-          }}, props.attributes.paragraph2)
+          {style: {
+            padding: '0 3%'
+          }},
+          React.createElement(
+            "h3",
+            {
+              style: {
+                paddingTop: "10px",
+                margin: "0",
+              },
+            },
+            "Pr\xEAt de jeux et jouets"
+          ),
+          React.createElement(
+            "p",
+            {
+              style: {
+                margin: "10px 0",
+                whiteSpace: "pre-wrap",
+                fontSize: "15px"
+              },
+            },
+            props.attributes.paragraph2
+          )
         )
       ),
       React.createElement(
         "div",
-        {style: {
-            display: 'flex',
-            justifyContent: 'flex-start',
-            height: 'auto',
-            marginTop: '100px'
-        }},
+        {
+          style: {
+            display: "flex",
+            justifyContent: "flex-start",
+            height: "auto",
+            marginTop: "100px",
+          },
+        },
         React.createElement(
           "div",
-          {style: {
-              width: '115px',
-              minHeight: '100%',
-              display: 'flex',
-              alignItems: 'center',
-          }},
+          {
+            style: {
+              width: "115px",
+              minHeight: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: 'center'
+            },
+            class: "block-img"
+          },
           React.createElement(
             "svg",
             {
@@ -243,15 +291,30 @@ wp.blocks.registerBlockType("ljpt-plugins/games-library-data-block", {
         ),
         React.createElement(
           "div",
-          null,
-          React.createElement("h3", {style: {
-              paddingTop: '10px',
-              margin: '0',
-          }}, "La ludoth\xE8que est ouverte"),
-          React.createElement("p", {style: {
-              margin:'10px 0',
-              whiteSpace: 'pre-wrap'
-          }}, props.attributes.paragraph3)
+          {style: {
+            padding: '0 3%'
+          }},
+          React.createElement(
+            "h3",
+            {
+              style: {
+                paddingTop: "10px",
+                margin: "0",
+              },
+            },
+            "La ludoth\xE8que est ouverte"
+          ),
+          React.createElement(
+            "p",
+            {
+              style: {
+                margin: "10px 0",
+                whiteSpace: "pre-wrap",
+                fontSize: "15px"
+              },
+            },
+            props.attributes.paragraph3
+          )
         )
       )
     );
