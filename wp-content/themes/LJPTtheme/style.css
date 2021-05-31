@@ -1016,6 +1016,9 @@ table tr:last-of-type td:last-of-type {
     }
 }
 @media screen and (max-width: 300px) {
+    .responsive-menu-container .large-img {
+        height: 50%;
+    }
     /* ARTICLES */
     .article-btns .share-btn .share-btn-title p {
         left: -5px;

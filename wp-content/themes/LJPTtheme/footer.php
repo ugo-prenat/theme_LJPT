@@ -1,7 +1,7 @@
     
     <footer>
         <div class="gtc-container">
-            <p>Consulter notre <a href="http://localhost/theme_ljpt/index.php/politique-de-confidentialite/">politique de confidentialité</a>.</p>
+            <p>Consultez notre <a href="http://localhost/theme_ljpt/index.php/politique-de-confidentialite/">politique de confidentialité</a>.</p>
         </div>
         <div class="wp-login-container">
             <?php

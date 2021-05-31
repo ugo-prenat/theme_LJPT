@@ -57,6 +57,7 @@ wp.blocks.registerBlockType("ljpt-plugins/newsletter-info-block", {
             fill: "#7438AD",
             width: "60px",
             height: "60px",
+            marginRight: "5%"
           },
         },
         React.createElement("path", {
