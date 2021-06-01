@@ -50,11 +50,17 @@ figcaption {
 .margin-bottom-100 {
     margin-bottom: 100px;
 }
+.min-width-100 {
+    min-width: 100%;
+}
 .practical-data-page-main-container {
     padding-bottom: 15vh !important;
 }
 .height-300 img {
     height: 300px !important;
+}
+.default-page-main-container p {
+    min-width: 100%;
 }
 
 /* MENU */
@@ -375,6 +381,7 @@ figcaption {
 
 /* SINGLE POST */
 .single-post-container {
+    min-height: 72vh;
     width: 80%;
     padding: 10vh 10%;
 }
@@ -838,6 +845,15 @@ table tr:last-of-type td:last-of-type {
     .wp-block-ljpt-plugins-games-library-data-block .block-img, .find-us-block-container .block-title {
         display: none !important;
     }
+    /* SINGLE POST */
+    .single-post-container figure {
+        width: 100%;
+        margin: 0;
+        margin-top: 50px;
+    }
+    .single-post-container h1 {
+        font-size: 35px;
+    }
 }
 @media screen and (max-width: 600px) {
     /* ARTICLES */
@@ -902,6 +918,17 @@ table tr:last-of-type td:last-of-type {
     .article-content h2 {
         font-size: 20px;
     }
+    /* SINGLE POST */
+    .single-post-container {
+        padding-top: 5vh;
+    }
+    .single-post-container .titles {
+        margin-bottom: 4vh;
+    }
+    .single-post-container .single-post-content {
+        padding: 0;
+        width: 100%;
+    }
     /* FOOTER */
     footer {
         width: 90%;
@@ -958,6 +985,10 @@ table tr:last-of-type td:last-of-type {
     }
     .article-content .article-btns {
         padding-top: 14px;
+    }
+    /* SINGLE POST */
+    .single-post-container h1 {
+        font-size: 30px;
     }
 }
 @media screen and (max-width: 390px) {
