@@ -59,7 +59,7 @@ figcaption {
 .height-300 img {
     height: 300px !important;
 }
-.default-page-main-container p {
+.main-container p {
     min-width: 100%;
 }
 
@@ -287,6 +287,9 @@ figcaption {
     font-weight: 500;
     width: 89%;
     background-color: white;
+}
+.article-content .article-btns p {
+    min-width: fit-content;
 }
 .article-content .back-articles-btns {
     height: 31px;
@@ -928,6 +931,13 @@ table tr:last-of-type td:last-of-type {
     .single-post-container .single-post-content {
         padding: 0;
         width: 100%;
+    }
+    /* NEWSLETTER */
+    .wp-block-ljpt-plugins-newsletter-info-block svg {
+        display: none;
+    }
+    .wp-block-ljpt-plugins-newsletter-info-block p {
+        min-width: 100% !important;
     }
     /* FOOTER */
     footer {

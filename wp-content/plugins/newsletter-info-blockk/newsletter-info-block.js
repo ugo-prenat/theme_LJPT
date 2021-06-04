@@ -55,8 +55,8 @@ wp.blocks.registerBlockType("ljpt-plugins/newsletter-info-block", {
           viewBox: "0 0 512 512",
           style: {
             fill: "#7438AD",
-            width: "60px",
-            height: "60px",
+            width: "10%",
+            height: "100%",
             marginRight: "5%"
           },
         },
@@ -76,7 +76,8 @@ wp.blocks.registerBlockType("ljpt-plugins/newsletter-info-block", {
       React.createElement("p", {style: {
           whiteSpace: 'pre-wrap',
           color: '#7438AD',
-          margin: '0 3%'
+          margin: '0 3%',
+          minWidth: 'unset'
       }}, props.attributes.newsletterInfo)
     );
   },

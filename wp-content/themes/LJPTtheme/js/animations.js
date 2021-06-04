@@ -2,7 +2,7 @@ const PATH = template.uri
 
 // Read more button animations
 const readMoreBtnContainers = document.querySelectorAll('.article-btns .article-btn .read-more-btn .animation-container .animation')
-const readMoreBtns          = document.querySelectorAll('.article-btns .article-btn .read-more-btn')
+const readMoreBtns = document.querySelectorAll('.article-btns .article-btn .read-more-btn')
 
 for (let i = 0; i < readMoreBtnContainers.length; i++) {
     const container = readMoreBtnContainers[i];
@@ -22,10 +22,10 @@ for (let i = 0; i < readMoreBtnContainers.length; i++) {
 
 // Share button animations
 const shareBtnSocialNetwork = document.querySelectorAll('.article-btns .share-btn .share-btn-social-network')
-const shareBtnContainers    = document.querySelectorAll('.article-btns .share-btn .animation-container .animation')
-const shareBtnsTitleP       = document.querySelectorAll('.article-btns .share-btn .share-btn-title p')
-const shareBtnsTitle        = document.querySelectorAll('.article-btns .share-btn .share-btn-title')
-const shareBtns             = document.querySelectorAll('.article-btns .share-btn')
+const shareBtnContainers = document.querySelectorAll('.article-btns .share-btn .animation-container .animation')
+const shareBtnsTitleP = document.querySelectorAll('.article-btns .share-btn .share-btn-title p')
+const shareBtnsTitle = document.querySelectorAll('.article-btns .share-btn .share-btn-title')
+const shareBtns = document.querySelectorAll('.article-btns .share-btn')
 
 for (let i = 0; i < shareBtnContainers.length; i++) {
     const container = shareBtnContainers[i];
@@ -74,8 +74,6 @@ for (let i = 0; i < shareBtnContainers.length; i++) {
                 animation.playSegments([70, 50], true)
 
                 setTimeout(() => shareBtnsTitleP[i].style.transform = 'scale(1)', 1)
-                
-
             }, 600)
         }, 100)
     })
