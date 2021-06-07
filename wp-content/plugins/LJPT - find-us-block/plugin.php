@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Name: Block nous trouver
+* Plugin Name: LJPT - block nous trouver
 */
 
 add_action('enqueue_block_editor_assets', function() {

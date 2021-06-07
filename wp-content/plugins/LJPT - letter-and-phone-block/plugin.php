@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Name: Block courrier et téléphone
+* Plugin Name: LJPT - block courrier et téléphone
 */
 
 add_action('enqueue_block_editor_assets', function() {

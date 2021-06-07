@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Name: Block catalogue
+* Plugin Name: LJPT - block catalogue
 */
 
 add_action('enqueue_block_editor_assets', function() {

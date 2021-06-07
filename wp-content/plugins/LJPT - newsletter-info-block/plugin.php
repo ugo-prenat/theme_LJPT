@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Name: Block infos newsletter
+* Plugin Name: LJPT - block infos newsletter
 */
 
 add_action('enqueue_block_editor_assets', function() {

@@ -23,17 +23,17 @@ add_action('customize_register', function(WP_Customize_Manager $manager) {
         'default' => get_template_directory_uri() . '/img/logo-large.jpeg',
     ]);
 
-    $manager->add_control('main_menu_small_img', [
-        'section' => 'main_menu_small_img_section',
-    ]);
-    $manager->add_control('main_menu_large_img', [
-        'section' => 'main_menu_large_img_section',
-    ]);
-
-    // $manager->add_control(new WP_Customize_Image_Control($manager, 'main_menu_small_img', [
+    // $manager->add_control('main_menu_small_img', [
     //     'section' => 'main_menu_small_img_section',
-    // ]));
-    // $manager->add_control(new WP_Customize_Image_Control($manager, 'main_menu_large_img', [
+    // ]);
+    // $manager->add_control('main_menu_large_img', [
     //     'section' => 'main_menu_large_img_section',
-    // ]));
+    // ]);
+
+    $manager->add_control(new WP_Customize_Image_Control($manager, 'main_menu_small_img', [
+        'section' => 'main_menu_small_img_section',
+    ]));
+    $manager->add_control(new WP_Customize_Image_Control($manager, 'main_menu_large_img', [
+        'section' => 'main_menu_large_img_section',
+    ]));
 });

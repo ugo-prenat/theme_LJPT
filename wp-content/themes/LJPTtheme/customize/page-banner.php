@@ -58,61 +58,61 @@ add_action('customize_register', function(WP_Customize_Manager $manager) {
         'default' => get_template_directory_uri() . '/img/background/bg-qui-sommes-nous.jpg',
     ]);
 
-    $manager->add_control('homepage_banner', [
-        'section' => 'homepage_banner_section',
-        'label' => 'Choix de la bannière'
-    ]);
-    $manager->add_control('activity_page_banner', [
-        'section' => 'activity_page_banner_section',
-        'label' => 'Choix de la bannière'
-    ]);
-    $manager->add_control('community_page_banner', [
-        'section' => 'community_page_banner_section',
-        'label' => 'Choix de la bannière'
-    ]);
-    $manager->add_control('practical_data_page_banner', [
-        'section' => 'practical_data_page_banner_section',
-        'label' => 'Choix de la bannière'
-    ]);
-    $manager->add_control('about_page_banner', [
-        'section' => 'about_page_banner_section',
-        'label' => 'Choix de la bannière'
-    ]);
-    $manager->add_control('bonus_page_banner', [
-        'section' => 'bonus_page_banner_section',
-        'label' => 'Choix de la bannière'
-    ]);
-    $manager->add_control('newsletter_page_banner', [
-        'section' => 'newsletter_page_banner_section',
-        'label' => 'Choix de la bannière'
-    ]);
-
-    // $manager->add_control(new WP_Customize_Image_Control($manager, 'homepage_banner', [
+    // $manager->add_control('homepage_banner', [
     //     'section' => 'homepage_banner_section',
     //     'label' => 'Choix de la bannière'
-    // ]));
-    // $manager->add_control(new WP_Customize_Image_Control($manager, 'activity_page_banner', [
+    // ]);
+    // $manager->add_control('activity_page_banner', [
     //     'section' => 'activity_page_banner_section',
     //     'label' => 'Choix de la bannière'
-    // ]));
-    // $manager->add_control(new WP_Customize_Image_Control($manager, 'community_page_banner', [
+    // ]);
+    // $manager->add_control('community_page_banner', [
     //     'section' => 'community_page_banner_section',
     //     'label' => 'Choix de la bannière'
-    // ]));
-    // $manager->add_control(new WP_Customize_Image_Control($manager, 'practical_data_page_banner', [
+    // ]);
+    // $manager->add_control('practical_data_page_banner', [
     //     'section' => 'practical_data_page_banner_section',
     //     'label' => 'Choix de la bannière'
-    // ]));
-    // $manager->add_control(new WP_Customize_Image_Control($manager, 'about_page_banner', [
+    // ]);
+    // $manager->add_control('about_page_banner', [
     //     'section' => 'about_page_banner_section',
     //     'label' => 'Choix de la bannière'
-    // ]));
-    // $manager->add_control(new WP_Customize_Image_Control($manager, 'bonus_page_banner', [
+    // ]);
+    // $manager->add_control('bonus_page_banner', [
     //     'section' => 'bonus_page_banner_section',
     //     'label' => 'Choix de la bannière'
-    // ]));
-    // $manager->add_control(new WP_Customize_Image_Control($manager, 'newsletter_page_banner', [
+    // ]);
+    // $manager->add_control('newsletter_page_banner', [
     //     'section' => 'newsletter_page_banner_section',
     //     'label' => 'Choix de la bannière'
-    // ]));
+    // ]);
+
+    $manager->add_control(new WP_Customize_Image_Control($manager, 'homepage_banner', [
+        'section' => 'homepage_banner_section',
+        'label' => 'Choix de la bannière'
+    ]));
+    $manager->add_control(new WP_Customize_Image_Control($manager, 'activity_page_banner', [
+        'section' => 'activity_page_banner_section',
+        'label' => 'Choix de la bannière'
+    ]));
+    $manager->add_control(new WP_Customize_Image_Control($manager, 'community_page_banner', [
+        'section' => 'community_page_banner_section',
+        'label' => 'Choix de la bannière'
+    ]));
+    $manager->add_control(new WP_Customize_Image_Control($manager, 'practical_data_page_banner', [
+        'section' => 'practical_data_page_banner_section',
+        'label' => 'Choix de la bannière'
+    ]));
+    $manager->add_control(new WP_Customize_Image_Control($manager, 'about_page_banner', [
+        'section' => 'about_page_banner_section',
+        'label' => 'Choix de la bannière'
+    ]));
+    $manager->add_control(new WP_Customize_Image_Control($manager, 'bonus_page_banner', [
+        'section' => 'bonus_page_banner_section',
+        'label' => 'Choix de la bannière'
+    ]));
+    $manager->add_control(new WP_Customize_Image_Control($manager, 'newsletter_page_banner', [
+        'section' => 'newsletter_page_banner_section',
+        'label' => 'Choix de la bannière'
+    ]));
 });

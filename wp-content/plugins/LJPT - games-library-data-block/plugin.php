@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Name: Block infos ludothèque
+* Plugin Name: LJPT - block infos ludothèque
 */
 
 add_action('enqueue_block_editor_assets', function() {
