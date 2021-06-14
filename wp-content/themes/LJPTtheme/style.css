@@ -44,6 +44,9 @@ ul {
 figcaption {
     text-align: center;
 }
+strong {
+    font-weight: 600;
+}
 .margin-top-100 {
     margin-top: 100px;
 }
@@ -58,6 +61,12 @@ figcaption {
 }
 .height-300 img {
     height: 300px !important;
+}
+.height-186 img {
+	height: 186px !important;
+}
+.width-auto img {
+	width: auto;
 }
 .main-container p {
     min-width: 100%;
@@ -149,6 +158,7 @@ figcaption {
 .menu-container .sub-menu {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     position: absolute;
     top: 95%;
     width: max-content;
@@ -400,9 +410,12 @@ figcaption {
 .single-post-content {
     width: 80%;
     padding: 0 10%;
+    display: flex;
+    flex-direction: column;
 }
 .single-post-container img {
     border-radius: 7px !important;
+    margin-top: 3vh;
 }
 .single-post-container .wp-block-image {
     display: flex;
@@ -684,6 +697,88 @@ table tr:last-of-type td:last-of-type {
     height: auto;
 }
 
+/* NEWSLETTER AND CONTACT FORMS */
+#mailpoet_form_2, #contact-form-197 form {
+	display:flex;
+	justify-content: center;
+}
+#contact-form-197 form {
+	margin-bottom: 5vh;
+}
+#mailpoet_form_2 form {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+	margin-top: 5vh;
+	width: 70%;
+}
+.newsletter-form-firstname-input, .newsletter-form-lastname-input, .contact-form-name-input-wrap, .contact-form-mail-input-wrap {
+	position: relative;
+	width: 48%;
+	display: flex;
+	margin-bottom: 10px;
+}
+.contact-form-name-input-wrap, .contact-form-mail-input-wrap {
+	flex: auto !important;
+}
+.contact-form-name-input-wrap, .contact-form-mail-input-wrap, .contact-form-message-input-wrap {
+	border-right: none !important;
+}
+.contact-form-name-input-wrap {
+	margin-right: 20px;
+}
+.newsletter-form-firstname-input label, .newsletter-form-lastname-input label, .newsletter-form-mail-input label, .contact-form-name-input-wrap label, .contact-form-mail-input-wrap label, .contact-form-message-input-wrap label {
+	position: absolute;
+	top: -10px;
+	left: 10px;
+	padding: 0 5px;
+	background-color: white;
+	font-weight: normal !important;
+	color: #7438AD;
+}
+.contact-form-name-input-wrap label, .contact-form-mail-input-wrap label, .contact-form-message-input-wrap label {
+	color: #94CB4F;
+	top: -12px;
+	left: 15px;
+}
+.contact-form-name-input-wrap input, .contact-form-mail-input-wrap input, .contact-form-message-input-wrap textarea {
+	border: 2px solid #94CB4F !important;
+}
+.newsletter-form-firstname-input input, .newsletter-form-lastname-input input, .newsletter-form-mail-input input, .contact-form-name-input-wrap input, .contact-form-mail-input-wrap input, .contact-form-message-input-wrap textarea {
+	padding: 10px 7px !important;
+	outline: none;
+	border: 2px solid #7438AD;
+	border-radius: 10px;
+	font-size: 16px;
+	resize: vertical;
+}
+.contact-form-message-input-wrap textarea {
+	height: 8em !important;
+}
+.newsletter-form-mail-input, .contact-form-message-input-wrap {
+	display: flex;
+	width: 100%;
+	position: relative;
+}
+#mailpoet_form_2 .mailpoet_submit, .contact-form-button button {
+	padding: 8px 20px !important;
+	background-color: rgba(138, 56, 173, .2);
+	border-radius: 40px;
+	color: #7438AD;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.contact-form-button button {
+	color: #94CB4F;
+	background-color: rgba(148, 203, 79, .2);
+	font-size: 14px !important;
+	font-weight: 500 !important;
+}
+.contact-form-button button:hover {
+	color: #94CB4F !important;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 1200px) {
     /* PRACTICAL DATA */
@@ -709,7 +804,6 @@ table tr:last-of-type td:last-of-type {
         flex-direction: column;
         justify-content: center;
         transform: translateX(-101%);
-        /* background-image: url('./img/background/bg-pattern.jpeg'); */
         background-size: cover;
         background-position-y: -260px;
         transition: transform 1s cubic-bezier(0.4, 0, 0.35, 1);
@@ -858,6 +952,18 @@ table tr:last-of-type td:last-of-type {
         font-size: 35px;
     }
 }
+@media screen and (max-width: 650px) {
+	.newsletter-page-main-container .main {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 625px) {
+	/* NEWSLETTER AND CONTACT FORM */
+	.contact-form-name-input-wrap {
+		margin-right: 0;
+		width: 100%;
+	}
+}
 @media screen and (max-width: 600px) {
     /* ARTICLES */
     .article-list-container {
@@ -892,6 +998,10 @@ table tr:last-of-type td:last-of-type {
     .letter-and-phone-block-container .block-title {
         display: none;
     }
+    /* NEWSLETTER AND CONTACT FORM */
+	.newsletter-form-firstname-input, .newsletter-form-lastname-input {
+		width: 100%;
+	}
 }
 @media screen and (max-width: 500px) {
     /* MENU */

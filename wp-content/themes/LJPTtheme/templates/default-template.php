@@ -7,7 +7,7 @@
 
 <div class="main-container default-page-main-container">
     <div class="main">
-        <?= get_the_content() ?>
+        <?php the_content() ?>
     </div>
 </div>
 

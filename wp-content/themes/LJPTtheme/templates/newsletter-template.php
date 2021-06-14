@@ -14,7 +14,7 @@
 
 <div class="main-container newsletter-page-main-container">
     <div class="main">
-        <?= get_the_content() ?>
+        <?php the_content() ?>
     </div>
 </div>
 

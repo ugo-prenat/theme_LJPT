@@ -15,7 +15,7 @@
 
 <div class="main-container practical-data-page-main-container">
     <div class="main">
-        <?= get_the_content() ?>
+        <?php the_content() ?>
     </div>
 
     <div class="top-of-page-btn-container" onclick="goTopOfPage()">

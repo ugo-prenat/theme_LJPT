@@ -8,7 +8,5 @@ window.addEventListener('scroll', () => {
         let newBackgroundPosition = (scrollTop * parallaxSpeed) * -1
         mainContainer.style.backgroundPositionY = `${newBackgroundPosition}px`
     }
-    catch(TypeError) {
-        console.log('TypeError');
-    }
+    catch(TypeError) {}
 })
