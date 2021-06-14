@@ -21,7 +21,7 @@
                         </a>
                         <p class="author-and-date"><?php the_author() ?> le <?php echo get_the_date() ?></p>
                         <div class="article-text">
-                            <?php the_content() ?>
+                            <? wp_trim_excerpt() ?>
                         </div>
                         <div class="article-btns">
                             <div class="article-btn read-more-btn-container">

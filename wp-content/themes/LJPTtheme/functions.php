@@ -60,10 +60,6 @@ function get_post_img_url() {
     return $first_img;
 }
 
-add_filter('the_content', function() {
-    return preg_replace( '/<img[^>]+./', '', get_the_content());
-});
-
 add_action('widgets_init', function() {
 
     register_widget(NewsletterWidget::class);
