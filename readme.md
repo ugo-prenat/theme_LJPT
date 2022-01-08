@@ -1,10 +1,14 @@
-<div  align=center>
-<img src='https://www.lejeupourtous.org/wp-content/uploads/2018/08/cropped-logo-detoure-transparent-1.png' width=15%' />
+<div  align='center'>
+  <img src='https://www.lejeupourtous.org/wp-content/uploads/2018/08/cropped-logo-detoure-transparent-1.png' width=15%' />
 </div>
 
 <h1 align='center'>Le Jeu Pour Tous</h1>
 
-<img src='https://github.com/ugo-prenat/cloud/blob/main/LJPT/ljpt_01.gif?raw=true'/>
+<br>                  
+                  
+<div align='center'>
+  <img src='https://github.com/ugo-prenat/cloud/blob/main/LJPT/ljpt_01.gif?raw=true'/>
+</div>                                                                                 
 
 <p align="justify">
 Le Jeu Pour Tous est une association qui s’engage pour la reconnaissance du jeu en tant que pratique culturelle et populaire.
