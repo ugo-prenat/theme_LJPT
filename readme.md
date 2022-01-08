@@ -4,7 +4,7 @@
 
 <h1 align='center'>Le Jeu Pour Tous</h1>
 
-<img src='https://im7.ezgif.com/tmp/ezgif-7-1693227ae2.gif'/>
+<img src='https://github.com/ugo-prenat/cloud/blob/main/LJPT/ljpt_01.gif?raw=true'/>
 
 <p align="justify">
 Le Jeu Pour Tous est une association qui s’engage pour la reconnaissance du jeu en tant que pratique culturelle et populaire.
