@@ -10,6 +10,8 @@
   <img src='https://github.com/ugo-prenat/cloud/blob/main/LJPT/ljpt_01.gif?raw=true'/>
 </div>                                                                                 
 
+<br>                                                                                    
+                                                                                    
 <p align="justify">
 Le Jeu Pour Tous est une association qui s’engage pour la reconnaissance du jeu en tant que pratique culturelle et populaire.
 
